@@ -1,5 +1,6 @@
 # 20-03-19 React Conditional Rendering CW
-
+### You should be passing in Items For Sell (the array your defined in state) to the child component to display items. You can't through a function (what you're passing now). The conditional rendering looks solid. Be sure to review state/props/callbacks aka passing info between components. Looks like you did a good job of code a little test a little as well and managed your time will enough to present a semi-wokring version without getting too hung up on your error. Nice job overall.
+### Score : 3/5
 #### Set Up
 - Create a react app called buy-sell-app
 - Create a class based component called `AppContainer` that displays an h1 tag with the text `Buy Sell App`
