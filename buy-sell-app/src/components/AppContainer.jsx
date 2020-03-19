@@ -7,10 +7,12 @@ class AppContainer extends Component {
         super(props);
         this.state = {
             userBuy : false,
-            userSell: false
+            userSell: false,
+            itemsForSale : []
         }
     }
     updateSellArray = (sellArray) => {
+        this.state.itemsForSale.push(sellArray);
         this.setState({itemsForSale: this.state.itemsForSale})
     }
     userBuy= () =>{
@@ -29,7 +31,7 @@ class AppContainer extends Component {
             userDecision =  <Buy/>
 
         } else if ( this.state.userSell){
-            userDecision =<Sell /> 
+            userDecision =<Sell updateSellArray = {this.updateSellArray}/> 
         }
         return (
             <div>

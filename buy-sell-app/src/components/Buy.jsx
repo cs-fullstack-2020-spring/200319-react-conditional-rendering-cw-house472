@@ -11,19 +11,21 @@ class Buy extends Component {
     handleSubmission = (event) => {
         event.preventDefault();
         // console.log(this.state)
-        this.state.itemsOffered.push({
-            title: this.state.productTitle,
-            price: this.stateproductPrice,
-            condition: this.stateproductCondition
-        });
-        this.setState({ itemsOffered: this.state.itemsForSale })
+        // this.state.itemsOffered.push({
+        //     title: this.state.productTitle,
+        //     price: this.stateproductPrice,
+        //     condition: this.stateproductCondition
+        // });
+        // this.setState({ itemsOffered: this.state.itemsForSale })
         // console.log(this.state.itemsForSale)
         this.setState({
             productTitle: "",
             productPrice: "",
             
         })
+        this.props.updateSellArray(this.state)
     }
+   
 handleOffer = (event) => {
     
     if(event.target.name == "productTitle") {

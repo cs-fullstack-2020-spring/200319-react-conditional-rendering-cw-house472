@@ -11,7 +11,8 @@ class ListOfItems extends Component {
         return (
             <div>
                 <h3>List of Items</h3>
-                {/* {
+                {/* TOFIX TYPE ERROR UPDATESELLARRAY.MAP NOT A FUNCTIION
+                {
                     this.props.updateSellArray.map((sell, index) =>{
                         return(
                             <div key = {index}>
